@@ -1,0 +1,200 @@
+body{
+  background-color: pink;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  font-family: "indie flower";
+  width: 100%;
+  height: 100%;
+}
+
+#question{
+  text-align: center;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  font-size: 3em;
+  margin-top: 10px;
+}
+
+#buttonArea{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 700px;
+  min-height: 100px;
+}
+
+#yes{
+  position: absolute;
+  background-color: salmon;
+  width: 100px;
+  outline: none!important;
+  border:none!important;
+  left: 10px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+#no{
+  position: absolute;
+  background-color: salmon;
+    outline: none!important;
+  border:none!important;
+  width: 100px;
+  right: 10px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+@keyframes floatUp{
+  0%{
+    -webkit-transform: translateY(0%) rotate(0deg);
+    -ms-transform: translateY(0%) rotate(0deg);
+    -moz-transform: translateY(0%) rotate(0deg);
+    transform: translateY(0%) rotate(0deg);
+  }
+
+  100%{
+    -webkit-transform: translateY(-100vh) rotate(720deg);
+    -ms-transform: translateY(-100vh) rotate(720deg);
+    -moz-transform: translateY(-100vh) rotate(720deg);
+    transform: translateY(-100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+#heart1{
+  bottom: 1%;
+  right: 5%;
+}
+
+#heart2{
+  bottom: 1%;
+  left: 5%;
+}
+#heart3{
+  bottom: 1%;
+  left: calc(50% - 20px);
+}
+
+#heart4{
+  bottom: 1%;
+  right: 20%;
+}
+
+#heart5{
+  bottom: 1%;
+  left: 25%;
+}
+#heart6{
+  bottom: 20%;
+  left: calc(50% - 20px);
+}
+
+
+.heart{
+  position: absolute;
+  animation: floatUp 2s ease-out forwards;
+  display: none;
+  z-index: 5;
+}
+
+.choice{
+  font-family: "lovers quarrel";
+  font-size: 2em;
+}
+
+.clicked{
+  background-color: red!important;
+}
+
+#response{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2em;
+}
+
+#counterShow{
+  position: absolute;
+  bottom: 10px;
+  font-size: 2em;
+  display: none;
+}
+#counter{
+  font-family: audiowide;
+}
+#mainArea{
+  display: none;
+}
+
+#nameEnterArea{
+    margin: 0 auto;
+  text-align: center;
+}
+#nameEnterField{
+  text-align: center;
+  margin-top: 10px;
+  width: 300px;
+  border: 3px groove red;
+  background-color: salmon;
+  font-size: 2em;
+  color: white;
+  border-radius: 10%;
+  box-shadow: 0 0 2px 2px white;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+#nameEnterField:focus{
+  outline: none!important;
+}
+
+#go{
+  display: inline-block;
+  color: black;
+  font-size: 2em;
+  padding: 5px;
+  margin-top: 10px;
+  color: black;
+  margin-left: 10px;
+  width: 100px;
+  text-align: center;
+  border: 2px inset red;
+  background: orangered;
+  border-radius: 10%;
+  box-shadow: 0 0 2px 2px white;
+}
+
+#go:hover{
+  cursor:pointer!important;
+}
+
+#go:active{
+  box-shadow: none;
+  opacity: 0.8;
+}
+
+#nameEnterMessage{
+  margin-top: 50px;
+  font-size: 2em;
+}
+
+#seen{
+  font-family: helvetica;
+  color: gray;
+  display: none;
+}
