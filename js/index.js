@@ -40,7 +40,6 @@ $(document).ready(function() {
     "Call me",
     "I bet you say that to every Jacob",
     "ILYSM <333",
-    "Shut up and kiss me",
     "I don't blame you",
     "I get that a lot"
   ];
